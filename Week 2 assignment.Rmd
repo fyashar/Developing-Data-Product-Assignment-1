@@ -1,0 +1,19 @@
+---
+title: "Week 2 Assignment"
+author: "Yashar F."
+date: "December 26, 2020"
+output: html_document
+---
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(leaflet)
+MyMap <-leaflet() %>% 
+        addTiles() %>% 
+        addMiniMap() %>% 
+        addScaleBar() %>% addMarkers(lat = 51.049999, lng = -114.066666, popup = "I am freezing in Calgary!") %>% 
+        addControl(html = "December 27, 2020", position = "bottomleft")
+MyMap
+```
+
+
